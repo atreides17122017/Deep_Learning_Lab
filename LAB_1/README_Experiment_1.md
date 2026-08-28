@@ -1,9 +1,9 @@
 # Experiment 1 — Single Layer Perceptron
 
-## 🎯 Objective
+## Objective
 Implement a **Single Layer Perceptron from scratch** and understand how a basic artificial neuron performs binary classification.
 
-## 📌 What I Did
+## What I Did
 - Explored the **Banknote Authentication Dataset**.
 - Performed basic EDA using histograms, a correlation heatmap, scatter plot and boxplots.
 - Normalized the numerical features.
@@ -18,7 +18,7 @@ Implement a **Single Layer Perceptron from scratch** and understand how a basic 
 - Compared different learning rates.
 - Also studied the perceptron on AND, OR, NOT and XOR logic gates.
 
-## 📊 Dataset
+## Dataset
 **Banknote Authentication Dataset**
 - Samples: **1,372**
 - Features: **4**
@@ -27,7 +27,7 @@ Implement a **Single Layer Perceptron from scratch** and understand how a basic 
 - `0` → Authentic
 - `1` → Forged
 
-## 🧠 Perceptron
+## Perceptron
 The perceptron calculates:
 
 `z = wᵀx + b`
@@ -39,14 +39,14 @@ and applies a step function:
 
 When a prediction is wrong, the weights and bias are updated using the perceptron learning rule.
 
-## 📈 Key Results
+## Key Results
 - **Test Accuracy: 98.18%**
 - All **148 authentic** banknotes were correctly classified.
 - **5 forged** banknotes were classified as authentic.
 - Learning rate **0.01** gave a good balance between convergence speed and stable learning.
 - The weights and bias gradually stabilized during training.
 
-## 🔍 Important Observation
+## Important Observation
 The Banknote Authentication dataset is approximately **linearly separable**, making it a good problem for a Single Layer Perceptron.
 
 The logic-gate experiment also showed the main limitation of the perceptron:
@@ -55,7 +55,7 @@ The logic-gate experiment also showed the main limitation of the perceptron:
 - NOT → solvable
 - XOR → **not solvable by a single-layer perceptron**
 
-## 🛠️ Technologies
+## Technologies
 - Python
 - NumPy
 - Pandas
@@ -63,5 +63,5 @@ The logic-gate experiment also showed the main limitation of the perceptron:
 - Seaborn
 - Scikit-learn
 
-## 💡 Takeaway
+## Takeaway
 This experiment builds the foundation for neural networks by showing how a single artificial neuron learns a decision boundary. It also demonstrates why **multiple layers and non-linear activation functions** are needed for more complex problems.
