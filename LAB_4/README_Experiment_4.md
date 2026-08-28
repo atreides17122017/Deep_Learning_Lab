@@ -1,9 +1,9 @@
 # Experiment 4 — CNN Architectures & Transfer Learning
 
-## 🎯 Objective
+##Objective
 Study the evolution of important CNN architectures and compare their performance using **CIFAR-10**. The experiment also demonstrates **transfer learning and fine-tuning** using pretrained CNN models.
 
-## 🧠 Architectures Studied
+## Architectures Studied
 
 | Architecture | Main Idea |
 |---|---|
@@ -13,7 +13,7 @@ Study the evolution of important CNN architectures and compare their performance
 | **GoogleNet / Inception** | Multi-scale feature extraction using parallel operations |
 | **ResNet** | Residual learning with skip connections |
 
-## 📌 What I Did
+## What I Did
 - Studied the evolution of CNN architectures.
 - Implemented and compared CNN models on CIFAR-10.
 - Used ImageNet-pretrained **VGG16, InceptionV3 and ResNet50**.
@@ -24,7 +24,7 @@ Study the evolution of important CNN architectures and compare their performance
 - Compared accuracy, precision, recall, F1-score and training time.
 - Studied dilated convolution and transpose convolution.
 
-## 📊 Dataset
+## Dataset
 **CIFAR-10**
 - Training images: **50,000**
 - Testing images: **10,000**
@@ -33,7 +33,7 @@ Study the evolution of important CNN architectures and compare their performance
 
 For transfer learning, images were resized to **96 × 96** and converted to the preprocessing format expected by the pretrained models.
 
-## 🔄 Transfer Learning Workflow
+##Transfer Learning Workflow
 
 ```text
 ImageNet-pretrained CNN
@@ -51,7 +51,7 @@ ImageNet-pretrained CNN
        Predict
 ```
 
-## 🏆 Model Comparison
+##Model Comparison
 
 | Model | Parameters | Test Accuracy | Training Time |
 |---|---:|---:|---:|
@@ -61,12 +61,12 @@ ImageNet-pretrained CNN
 | InceptionV3 | 22,066,346 | 69.12% | 2.52 min |
 | **ResNet50** | **23,851,274** | **91.71%** | **10.53 min** |
 
-### 🥇 Best Model
+### Best Model
 **ResNet50 achieved the highest test accuracy: 91.71%.**
 
 It also required the most training time among the compared models.
 
-## 🔧 Fine-Tuning Results
+## Fine-Tuning Results
 
 ### VGG16
 - Frozen best validation accuracy: **82.06%**
@@ -85,12 +85,12 @@ The last **30 layers** were unfrozen and fine-tuned using a learning rate of `0.
 
 Fine-tuning improved validation accuracy by **4.40 percentage points**.
 
-## 🔍 Class-wise Observation
+## Class-wise Observation
 For the final VGG16 model:
 - **Automobile** and **Ship** were among the strongest classes, both with F1-score **0.89**.
 - **Cat** was the most difficult class, with F1-score **0.70**.
 
-## ⚡ Other Concepts Studied
+## Other Concepts Studied
 
 ### Dilated Convolution
 Expands the receptive field without proportionally increasing the number of kernel parameters.
@@ -105,7 +105,7 @@ ResNet learns a residual mapping:
 
 Skip connections provide a direct path for information and gradients, making very deep networks easier to optimize.
 
-## 🛠️ Technologies
+## Technologies
 - Python
 - TensorFlow / Keras
 - NumPy
@@ -113,7 +113,7 @@ Skip connections provide a direct path for information and gradients, making ver
 - Matplotlib
 - Scikit-learn
 
-## 💡 Takeaway
+## Takeaway
 This experiment shows how CNN architectures evolved from small networks such as LeNet to very deep networks such as ResNet. The results demonstrate that **architecture, depth, preprocessing and transfer learning all strongly affect performance**.
 
 In this experiment, **ResNet50 + transfer learning + fine-tuning gave the best overall result**, reaching **91.71% test accuracy**.
