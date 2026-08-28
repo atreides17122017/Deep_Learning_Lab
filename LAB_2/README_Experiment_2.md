@@ -1,9 +1,9 @@
 # Experiment 2 — Multi-Layer Perceptron (MLP)
 
-## 🎯 Objective
+## Objective
 Build a **Multi-Layer Perceptron (MLP)** for multi-class image classification using the **Fashion-MNIST** dataset, then improve it using automated hyperparameter optimization.
 
-## 📌 What I Did
+## What I Did
 - Loaded and explored Fashion-MNIST.
 - Visualized sample images and class distribution.
 - Flattened each `28 × 28` image into **784 features**.
@@ -15,7 +15,7 @@ Build a **Multi-Layer Perceptron (MLP)** for multi-class image classification us
 - Retrained the model using the best configuration.
 - Compared the baseline and optimized models.
 
-## 📊 Dataset
+## Dataset
 **Fashion-MNIST**
 - Training images: **60,000**
 - Testing images: **10,000**
@@ -24,7 +24,7 @@ Build a **Multi-Layer Perceptron (MLP)** for multi-class image classification us
 
 The ten classes represent clothing categories such as T-shirt/top, Trouser, Pullover, Dress, Coat, Sandal, Shirt, Sneaker, Bag and Ankle Boot.
 
-## 🧠 Baseline Architecture
+##Baseline Architecture
 
 ```text
 784
@@ -38,7 +38,7 @@ Dense(10, Softmax)
 
 The output layer uses **Softmax** because this is a 10-class classification problem.
 
-## ⚙️ Hyperparameter Optimization
+## Hyperparameter Optimization
 The search explored combinations of:
 - Number of hidden layers
 - Number of neurons
@@ -51,7 +51,7 @@ The search explored combinations of:
 
 **RandomizedSearchCV** was used instead of checking every possible combination.
 
-## 🏆 Best Configuration
+## Best Configuration
 | Hyperparameter | Best Value |
 |---|---|
 | Hidden Layers | 3 |
@@ -71,14 +71,14 @@ The search explored combinations of:
 
 The optimized model showed a **small but measurable improvement** over the baseline.
 
-## 📈 Observations
+## Observations
 - Training accuracy increased steadily.
 - Training loss decreased throughout training.
 - Validation accuracy became more stable after the initial epochs.
 - The confusion matrix showed most predictions along the diagonal.
 - Some visually similar clothing classes, especially **Shirt, T-shirt/Top and Pullover**, were harder to distinguish.
 
-## 🛠️ Technologies
+## Technologies
 - Python
 - TensorFlow / Keras
 - NumPy
