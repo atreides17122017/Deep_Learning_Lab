@@ -1,9 +1,9 @@
 # Experiment 3 — Convolutional Neural Network (CNN)
 
-## 🎯 Objective
+##Objective
 Understand and implement the core components of a **Convolutional Neural Network** for image classification using CIFAR-10.
 
-## 📌 What I Did
+## What I Did
 - Loaded and explored CIFAR-10.
 - Normalized image pixels to `[0, 1]`.
 - Split the original training data into:
@@ -18,7 +18,7 @@ Understand and implement the core components of a **Convolutional Neural Network
 - Built and trained a CNN.
 - Evaluated the model using accuracy, precision, recall, F1-score and a confusion matrix.
 
-## 📊 Dataset
+## Dataset
 **CIFAR-10**
 - Training images: **50,000**
 - Testing images: **10,000**
@@ -28,7 +28,7 @@ Understand and implement the core components of a **Convolutional Neural Network
 Classes:
 `Airplane, Automobile, Bird, Cat, Deer, Dog, Frog, Horse, Ship, Truck`
 
-## 🧠 CNN Architecture
+## CNN Architecture
 
 ```text
 Input
@@ -57,7 +57,7 @@ Softmax
 - Epochs: **20**
 - Batch size: **32**
 
-## 🔬 Convolution Experiments
+##Convolution Experiments
 Different kernels were studied to understand how convolution extracts visual features such as:
 - edges
 - textures
@@ -66,21 +66,21 @@ Different kernels were studied to understand how convolution extracts visual fea
 
 Feature-map visualizations showed that early convolution layers learn simpler patterns such as edges and textures.
 
-## 📉 Pooling
+## Pooling
 Both pooling methods were compared:
 - Max Pooling
 - Average Pooling
 
 **Max pooling slightly outperformed average pooling** in the experiment.
 
-## 🏆 Key Results
+## Key Results
 - **Final Test Accuracy: 71.32%**
 - **Weighted F1-score: 71.49%**
 - `3 × 3` convolution performed better than the tested `5 × 5` and `7 × 7` alternatives.
 - ReLU performed substantially better than Sigmoid.
 - Increasing the number of filters improved accuracy, but also increased computational cost.
 
-## 📈 Important Observations
+## Important Observations
 CNNs are more suitable than a plain MLP for images because convolution:
 - uses **local connectivity**
 - shares weights across the image
@@ -89,7 +89,7 @@ CNNs are more suitable than a plain MLP for images because convolution:
 
 This allows the network to learn useful image patterns without manually designing features.
 
-## 🛠️ Technologies
+## Technologies
 - Python
 - TensorFlow / Keras
 - NumPy
@@ -97,5 +97,5 @@ This allows the network to learn useful image patterns without manually designin
 - Matplotlib
 - Scikit-learn
 
-## 💡 Takeaway
+## Takeaway
 This experiment demonstrates the complete CNN workflow, from convolution and pooling to feature-map visualization and image classification. It shows why CNNs are a natural choice for computer vision tasks.
