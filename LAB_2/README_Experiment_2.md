@@ -87,5 +87,5 @@ The optimized model showed a **small but measurable improvement** over the basel
 - Scikit-learn
 - SciKeras
 
-## 💡 Takeaway
+## Takeaway
 This experiment demonstrates how an MLP can learn useful representations from flattened images and how **hyperparameter tuning can improve model performance**. It also shows the limitation of treating an image as a flat vector, which motivates the use of CNNs.
